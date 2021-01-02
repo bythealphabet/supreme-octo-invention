@@ -1,0 +1,69 @@
+{
+  "name": "bythealphabet-mern-stack-template",
+  "version": "1.0.0",
+  "description": "A template for building MERN stack web applications.",
+  "main": "server/server.js",
+  "scripts": {
+    "clean": "rm -r dist ",
+    "dev": "nodemon",
+    "build": "webpack --env mode=production --env name=browser --env NODE_ENV=production && webpack --env mode=production --env name=server",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bythealphabet/bythealphabet-mern-stack-template.git"
+  },
+  "keywords": [
+    "MERN",
+    "REACTJS",
+    "NODE",
+    "MONGO",
+    "MONGOOSE",
+    "EXPRESS"
+  ],
+  "author": "Dudley Isaac Lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bythealphabet/bythealphabet-mern-stack-template/issues"
+  },
+  "homepage": "https://github.com/bythealphabet/bythealphabet-mern-stack-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/plugin-proposal-throw-expressions": "^7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@hot-loader/react-dom": "^17.0.1",
+    "babel-loader": "^8.2.2",
+    "file-loader": "^6.2.0",
+    "hot-loader": "^0.0.0",
+    "nodemon": "^2.0.6",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-middleware": "3.7.3",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^5.7.3",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "helmet": "^4.3.1",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-hot-loader": "^4.13.0",
+    "react-router-dom": "^5.2.0"
+  }
+}
